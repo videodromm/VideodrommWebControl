@@ -7,6 +7,8 @@ declare module VideodrommWebControl {
         prototype: App;
         new (): App;
         main(): void;
+        inputKeyPress(e: Event): void;
+        save(): void;
     }
     var App: AppFunc;
 }
