@@ -134,18 +134,6 @@ namespace VideodrommWebControl
         public bool CheckIfBrowserSupportsWebSocket()
         {
             var hasWebSocket = Window.WebSocket != null;
-
-            //if (hasWebSocket)
-            //{
-            //    WebSocketSupportImage.Src = "img/check.png";
-            //    WebSocketSupported.Style.Display = Display.Block;
-            //}
-            //else
-            //{
-            //    WebSocketSupportImage.Src = "img/cross.png";
-            //    WebSocketNotSupported.Style.Display = Display.Block;
-            //}
-
             return hasWebSocket;
         }
 

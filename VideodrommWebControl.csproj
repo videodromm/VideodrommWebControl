@@ -52,6 +52,7 @@
     <Content Include="Bridge\img\tls-lock.png" />
     <Content Include="Bridge\js\bridge.js" />
     <Content Include="Bridge\index.html" />
+    <Content Include="Bridge\js\nexusUI.js" />
     <Content Include="Bridge\js\videodrommWebControl.js" />
   </ItemGroup>
   <ItemGroup>

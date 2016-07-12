@@ -112,18 +112,6 @@
         },
         checkIfBrowserSupportsWebSocket: function () {
             var hasWebSocket = Bridge.hasValue(window.WebSocket);
-    
-            //if (hasWebSocket)
-            //{
-            //    WebSocketSupportImage.Src = "img/check.png";
-            //    WebSocketSupported.Style.Display = Display.Block;
-            //}
-            //else
-            //{
-            //    WebSocketSupportImage.Src = "img/cross.png";
-            //    WebSocketNotSupported.Style.Display = Display.Block;
-            //}
-    
             return hasWebSocket;
         },
         refreshUI: function (isConnected) {

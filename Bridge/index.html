@@ -25,6 +25,7 @@
 
     <title>Bridge.NET WebSocket</title>
     <script src="js/bridge.js"></script>
+    <script src="js/nexusUI.js"></script>
     <script src="js/videodrommWebControl.js?v=1"></script>
 </head>
 <body>
@@ -54,7 +55,7 @@
                 <div id="noWebSocketSupp">
                    
                     <div style="float: left; width: 600px; margin-left: 10px;">
-                        <p>Uh-oh, the browser you're using doesn't have native support for WebSocket. That means you can't run this demo.</p>
+                        <p>Uh-oh, the browser you're using doesn't have native support for WebSocket. That means you can't run this.</p>
                         <p>The following link lists the browsers that support WebSocket:</p>
                         <p><a href="http://caniuse.com/#feat=websockets">http://caniuse.com/#feat=websockets</a></p>
                     </div>
@@ -73,7 +74,7 @@
                         <br>
                         <br>
                         <strong>Message:</strong><br>
-                        <input class="draw-border" id="sendMessage" size="35" value="Rock it with HTML5 WebSocket">
+                        <input class="draw-border" id="sendMessage" size="35" value="message">
                         <br>
                         <button class="echo-button" id="send" class="wsButton">Send</button>
                     </div>
@@ -83,22 +84,22 @@
                         <button class="echo-button" id="clearLogBut" style="position: relative; top: 3px;">Clear log</button>
                     </div>
                 </div>
-                <div class="clearfix"></div>
-                <br />
-                <h4>Instructions</h4>
-                <ol>
-                    <li>
-                        Press the <b>Connect</b> button.
-                    </li>
-                    <li>
-                        Once connected, enter a message and press the <b>Send</b> button. The output will appear in the <b>Log</b> section. You can change the message and send again multiple times.
-                    </li>
-                    <li>
-                        Press the <b>Disconnect</b> button.
-                    </li>
-                </ol>
-                <b>Note:</b> In some environments the WebSocket connection may fail due to intermediary firewalls, proxies, routers, etc. In that case take advantage of WebSocket's secure capability and check <b>Use secure WebSocket (TLS)</b>. Even if you have no issues you can still feel free to test using a secure connection.
-                <br /><br />
+                <div class="clearfix">
+                    <br />
+                    <h4>Controls</h4>
+                    <canvas nx="dial"></canvas>
+                    <canvas id="dial3" nx="dial"></canvas>
+                    <style>
+                        .nx {
+                            float: left;
+                            margin: 5px;
+                        }
+                    </style>
+
+                    <canvas id="backgroundcolor" nx="colors"></canvas>
+                    <canvas nx="multislider" style="width:300px;height:100px"></canvas>
+                    <br />
+                </div>
             </div>
         </div>
     </section>
