@@ -93,7 +93,7 @@ namespace VideodrommWebControl
         {
             View.LogMessage("CONNECTED: " + Socket.Url);
             Window.LocalStorage.SetItem(SERVERURL, Socket.Url);
-            Window.Alert(string.Format("Stored {0}", Socket.Url));
+            View.LogMessage("Stored " + Socket.Url);
             View.RefreshUI(true);
         }
 

@@ -250,7 +250,7 @@
         onSocketOpen: function (e) {
             this.getView().logMessage("CONNECTED: " + this.getSocket().url);
             window.localStorage.setItem(VideodrommWebControl.WebSocketController.SERVERURL, this.getSocket().url);
-            window.alert(Bridge.String.format("Stored {0}", this.getSocket().url));
+            this.getView().logMessage("Stored " + this.getSocket().url);
             this.getView().refreshUI(true);
         },
         onSocketClose: function (e) {
