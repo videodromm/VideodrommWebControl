@@ -11,7 +11,7 @@ namespace VideodrommWebControl
 {
     public class WebSocketController
     {
-        private const string DEFAULT_SERVICE_URI = "ws://localhost";//"ws://echo.websocket.org/";
+        private const string DEFAULT_SERVICE_URI = "ws://127.0.0.1:8088/";//"ws://echo.websocket.org/";
 
         public WebSocket Socket { get; set; }
 

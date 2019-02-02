@@ -190,7 +190,7 @@
     
     Bridge.define('VideodrommWebControl.WebSocketController', {
         statics: {
-            DEFAULT_SERVICE_URI: "ws://localhost",
+            DEFAULT_SERVICE_URI: "ws://127.0.0.1:8088/",
             SERVERURL: "ServerUrl"
         },
         config: {
